@@ -17,7 +17,7 @@ public class Program {
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
 		EntityManager em = emf.createEntityManager();
-		
+		//adicionando as pessoas na base de dados
 		em.getTransaction().begin(); // Inicia um trasacção om o banco de dados
 		em.persist(p1);
 		em.persist(p2);
